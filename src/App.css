@@ -1,0 +1,80 @@
+app.css
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f3f3f3;
+  margin: 0;
+}
+
+.calculator {
+  background-color: #1c1c1c;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  width: 300px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+
+.display {
+  grid-column: span 4;
+  background-color: #333333;
+  color: #fff;
+  font-size: 2.5em;
+  text-align: right;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #4a4a4a;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.5em;
+  padding: 20px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #6b6b6b;
+}
+
+button:active {
+  background-color: #3b3b3b;
+}
+
+button:focus {
+  outline: none;
+}
+
+button.operator {
+  background-color: #ff9500;
+}
+
+button.operator:hover {
+  background-color: #ffab40;
+}
+
+button.operator:active {
+  background-color: #e58e00;
+}
+
+button.clear {
+  background-color: #d4d4d2;
+  color: #000;
+}
+
+button.clear:hover {
+  background-color: #e1e1df;
+}
+
+button.clear:active {
+  background-color: #bfbfbd;
+}
